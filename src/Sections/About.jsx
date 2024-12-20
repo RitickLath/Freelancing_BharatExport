@@ -33,11 +33,11 @@ const journeyPoints = [
 
 const About = () => {
   const sectionRef = useRef(null); // Reference for the section
-  const isInView = useInView(sectionRef, { threshold: 0.1, once: true }); // Check if the section is in view
+  const isInView = useInView(sectionRef, { threshold: 0.2, once: true }); // Check if the section is in view
 
   return (
     <div ref={sectionRef} className="bg-[#1F282A] py-20 w-full">
-      <div className="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row space-x-10 items-center lg:items-center">
+      <div className="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row lg:space-x-10 items-center lg:items-center">
         {/* Left Section - Image */}
         <motion.div
           className="lg:w-1/2 mt-8 lg:mt-0 lg:pl-12"
