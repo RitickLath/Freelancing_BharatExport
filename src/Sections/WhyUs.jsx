@@ -60,7 +60,7 @@ const WhyUs = () => {
   };
 
   return (
-    <div className="bg-[#1F282A] py-12 px-6 lg:px-16 w-full">
+    <div className="bg-[#1F282A] py-10 px-6 lg:px-16 w-full">
       <div className="container mx-auto text-center" ref={ref}>
         {/* Section Title */}
         <motion.h2

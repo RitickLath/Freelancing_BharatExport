@@ -12,11 +12,11 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative h-[70vh] md:h-screen w-screen overflow-hidden">
+    <div className="relative h-[70vh] md:h-screen w-full overflow-hidden">
       {/* Background Video */}
       <video
         className="bg-black absolute top-0 left-0 w-full h-full aspect-video object-cover"
-        src="/videos/Landingpage.mp4"
+        src="/videos/LandingPage.mp4"
         autoPlay
         loop
         muted

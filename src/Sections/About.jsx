@@ -36,7 +36,7 @@ const About = () => {
   const isInView = useInView(sectionRef, { threshold: 0.2, once: true }); // Check if the section is in view
 
   return (
-    <div ref={sectionRef} className="bg-[#1F282A] py-20 w-full">
+    <div ref={sectionRef} className="bg-[#1F282A] -mt-2 py-20 w-full">
       <div className="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row lg:space-x-10 items-center lg:items-center">
         {/* Left Section - Image */}
         <motion.div
