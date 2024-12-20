@@ -77,7 +77,7 @@ const WhyUs = () => {
           {points.map((point, index) => (
             <motion.div
               key={index}
-              className="bg-[#273036] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-[#273036] cursor-pointer  p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
               variants={cardVariants}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}

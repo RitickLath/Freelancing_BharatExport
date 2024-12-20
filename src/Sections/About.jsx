@@ -40,7 +40,7 @@ const About = () => {
       <div className="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row lg:space-x-10 items-center lg:items-center">
         {/* Left Section - Image */}
         <motion.div
-          className="lg:w-1/2 mt-8 lg:mt-0 lg:pl-12"
+          className="lg:w-1/2 mt-8 lg:mt-0 lg:pl-12 relative"
           initial={{ x: -300 }} // Start off-screen
           animate={isInView ? { x: 0 } : {}} // Animate when in view
           transition={{
@@ -55,6 +55,9 @@ const About = () => {
             alt="Global Trade"
             className="w-full rounded-lg shadow-lg object-cover"
           />
+          {/* Top-left and Bottom-right Borders */}
+          <div className="absolute -top-4 -left-4 lg:left-7 w-[30%] h-[30%] border-t-8 border-l-8 border-[#A86F18]"></div>
+          <div className="absolute -bottom-4 -right-4 w-[30%] h-[30%] border-b-8 border-r-8 border-[#A86F18]"></div>
         </motion.div>
 
         {/* Right Section - Text */}

@@ -80,7 +80,7 @@ const Category = () => {
           {categories.map((category, index) => (
             <motion.div
               key={index}
-              className="flex items-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6"
+              className="flex items-center cursor-pointer  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6"
               variants={cardVariants}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}

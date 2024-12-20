@@ -41,7 +41,7 @@ const Hero = () => {
         </motion.h1>
         <motion.h2
           variants={textVariants}
-          className="text-left max-w-[330px] lg:max-w-[600px] text-[#B9B8AD] text-xl mb-6"
+          className="text-center max-w-[330px] lg:max-w-[600px] text-[#B9B8AD] mb-6"
         >
           Your gateway to premium quality products from India. We specialize in
           delivering excellence across global markets. Partner with us for
