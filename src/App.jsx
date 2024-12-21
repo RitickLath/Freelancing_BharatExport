@@ -8,11 +8,13 @@ import FAQs from "./Sections/FAQs";
 import Footer from "./Sections/Footer";
 import Testimonials from "./Sections/Testimonials";
 import Navbar from "./Sections/Navbar";
+import Sticky from "./Sections/Sticky";
 
 const App = () => {
   return (
     <div className="overflow-hidden">
       <Navbar />
+      <Sticky />
       <Hero />
       <About />
       <WhyUs />
