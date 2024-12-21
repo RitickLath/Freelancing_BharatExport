@@ -44,7 +44,7 @@ const FAQs = () => {
   };
 
   return (
-    <div className="bg-[#101820] -mt-2 py-20 w-full overflow-hidden">
+    <div className="bg-[#1F282A] -mt-2 py-20 w-full overflow-hidden">
       <div className="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row lg:space-x-16">
         {/* Left Section - Heading */}
         <motion.div

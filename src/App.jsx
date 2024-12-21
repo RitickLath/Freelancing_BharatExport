@@ -5,16 +5,22 @@ import WhyUs from "./Sections/WhyUs";
 import Category from "./Sections/Category";
 import Roadmap from "./Sections/Roadmap";
 import FAQs from "./Sections/FAQs";
+import Footer from "./Sections/Footer";
+import Testimonials from "./Sections/Testimonials";
+import Navbar from "./Sections/Navbar";
 
 const App = () => {
   return (
     <div className="overflow-hidden">
+      <Navbar />
       <Hero />
       <About />
       <WhyUs />
       <Category />
       <Roadmap />
       <FAQs />
+      <Testimonials />
+      <Footer />
     </div>
   );
 };
