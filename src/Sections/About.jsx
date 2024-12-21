@@ -33,7 +33,7 @@ const journeyPoints = [
 
 const About = () => {
   const sectionRef = useRef(null); // Reference for the section
-  const isInView = useInView(sectionRef, { threshold: 0.2, once: true }); // Check if the section is in view
+  const isInView = useInView(sectionRef, { threshold: 0.2 }); // Check if the section is in view
 
   return (
     <div ref={sectionRef} className="bg-[#1F282A] -mt-2 py-20 w-full">
