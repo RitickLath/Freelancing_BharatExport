@@ -26,7 +26,7 @@ const Hero = () => {
     <div className="relative h-screen w-full overflow-hidden">
       {/* Background Video with Load Event */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-screen object-cover"
         src="/videos/LandingPage.mp4"
         autoPlay
         loop
