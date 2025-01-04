@@ -9,6 +9,7 @@ import Footer from "./Sections/Footer";
 import Testimonials from "./Sections/Testimonials";
 import Navbar from "./Sections/Navbar";
 import Sticky from "./Sections/Sticky";
+import ContactUs from "./Sections/ContactUs";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Roadmap />
       <FAQs />
       <Testimonials />
+      {/* <ContactUs /> */}
       <Footer />
     </div>
   );

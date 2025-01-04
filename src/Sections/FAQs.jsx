@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import { MdPhone, MdEmail } from "react-icons/md";
 
 const faqs = [
   {
@@ -76,6 +77,40 @@ const FAQs = () => {
             </a>
             .
           </p>
+
+          <div className="lg:mt-10 text-center text-[#F3EFDF]">
+            {/* Contact Details - Below FAQ */}
+            <motion.div
+              className="lg:flex flex-col hidden space-y-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="flex items-center text-lg text-[#F3EFDF]">
+                <MdPhone className="text-[#A86F18] text-2xl mr-4" />
+                <a href="tel:+919903431445" className="hover:underline">
+                  +91 9903431445
+                </a>
+              </div>
+
+              <div className="flex items-center text-lg text-[#F3EFDF]">
+                <MdPhone className="text-[#A86F18] text-2xl mr-4" />
+                <a href="tel:+919903893445" className="hover:underline">
+                  +91 9903893445
+                </a>
+              </div>
+
+              <div className="flex items-center text-lg text-[#F3EFDF]">
+                <MdEmail className="text-[#A86F18] text-2xl mr-4" />
+                <a
+                  href="mailto:support@ourcompany.com"
+                  className="hover:underline"
+                >
+                  support@ourcompany.com
+                </a>
+              </div>
+            </motion.div>
+          </div>
         </motion.div>
 
         {/* Right Section - FAQ List */}
@@ -130,6 +165,37 @@ const FAQs = () => {
             </a>
             .
           </p>
+
+          <motion.div
+            className="flex flex-col lg:hidden space-y-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="flex items-center text-lg text-[#F3EFDF]">
+              <MdPhone className="text-[#A86F18] text-2xl mr-4" />
+              <a href="tel:+919903431445" className="hover:underline">
+                +91 9903431445
+              </a>
+            </div>
+
+            <div className="flex items-center text-lg text-[#F3EFDF]">
+              <MdPhone className="text-[#A86F18] text-2xl mr-4" />
+              <a href="tel:+919903893445" className="hover:underline">
+                +91 9903893445
+              </a>
+            </div>
+
+            <div className="flex items-center text-lg text-[#F3EFDF]">
+              <MdEmail className="text-[#A86F18] text-2xl mr-4" />
+              <a
+                href="mailto:support@ourcompany.com"
+                className="hover:underline"
+              >
+                support@ourcompany.com
+              </a>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </div>
