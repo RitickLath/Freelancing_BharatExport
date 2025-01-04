@@ -42,7 +42,10 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-[#1F282A] py-20 w-full overflow-hidden">
+    <div
+      id="testimonials"
+      className="bg-[#1F282A] py-20 w-full overflow-hidden"
+    >
       <div className="container mx-auto px-6 lg:px-20 flex flex-col items-center">
         {/* Heading */}
         <motion.div

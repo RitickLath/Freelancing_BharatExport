@@ -52,7 +52,7 @@ const Category = () => {
   };
 
   return (
-    <div className="bg-[#F3EFDF] py-20 px-6 lg:px-20 w-full">
+    <div id="category" className="bg-[#F3EFDF] py-20 px-6 lg:px-20 w-full">
       <div className="container mx-auto text-center" ref={ref}>
         {/* Section Title */}
         <motion.h2

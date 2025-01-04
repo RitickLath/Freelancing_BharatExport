@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa";
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
@@ -27,13 +28,21 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[#1F282A] shadow-lg" : "bg-transparent"
+      className={`pt-2 fixed w-full top-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-[#1F282A] shadow-lg" : "bg-[#1F282A] bg-opacity-50"
       }`}
     >
       <div className="container mx-auto px-6 lg:px-20 flex items-center justify-between h-16">
         {/* Company Name */}
-        <div className="text-2xl font-bold text-white">India Exports</div>
+        <img
+          src="Images/LogoCompress.png"
+          className={`lg:-ml-12 w-[120px] ${isLoaded ? " hidden" : "block"}`}
+        />
+        <img
+          onLoad={() => setIsLoaded(true)}
+          src="Images/LogoHighRes.png"
+          className={`lg:-ml-12 w-[120px] ${isLoaded ? " block" : "hidden"}`}
+        />
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
