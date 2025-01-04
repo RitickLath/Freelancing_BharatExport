@@ -60,12 +60,7 @@ const Navbar = () => {
           >
             Category
           </button>
-          <button
-            onClick={() => handleScrollToSection("contact")}
-            className="hover:text-white transition text-gray-300"
-          >
-            Contact Us
-          </button>
+
           <button
             onClick={() => handleScrollToSection("faqs")}
             className="hover:text-white transition text-gray-300"
@@ -106,12 +101,7 @@ const Navbar = () => {
           >
             Category
           </button>
-          <button
-            onClick={() => handleScrollToSection("contact")}
-            className="block hover:text-white transition"
-          >
-            Contact Us
-          </button>
+
           <button
             onClick={() => handleScrollToSection("faqs")}
             className="block hover:text-white transition"

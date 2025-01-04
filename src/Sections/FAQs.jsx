@@ -70,7 +70,7 @@ const FAQs = () => {
           <p className="text-sm text-gray-300 mt-4 lg:block hidden">
             Can’t find your question?{" "}
             <a
-              href="mailto:support@example.com"
+              href="mailto:enquire@indiaexports.co.in"
               className="text-[#FFB400] font-semibold hover:underline"
             >
               Mail us
@@ -103,10 +103,10 @@ const FAQs = () => {
               <div className="flex items-center text-lg text-[#F3EFDF]">
                 <MdEmail className="text-[#A86F18] text-2xl mr-4" />
                 <a
-                  href="mailto:support@ourcompany.com"
+                  href="mailto:help@indiaexports.co.in"
                   className="hover:underline"
                 >
-                  support@ourcompany.com
+                  help@indiaexports.co.in
                 </a>
               </div>
             </motion.div>
@@ -158,7 +158,7 @@ const FAQs = () => {
           <p className="text-sm text-gray-300 mt-8 lg:hidden block">
             Can’t find your question?{" "}
             <a
-              href="mailto:support@example.com"
+              href="mailto:enquire@indiaexports.co.in"
               className="text-[#FFB400] font-semibold hover:underline"
             >
               Mail us
@@ -189,10 +189,10 @@ const FAQs = () => {
             <div className="flex items-center text-lg text-[#F3EFDF]">
               <MdEmail className="text-[#A86F18] text-2xl mr-4" />
               <a
-                href="mailto:support@ourcompany.com"
+                href="mailto:help@indiaexports.co.in"
                 className="hover:underline"
               >
-                support@ourcompany.com
+                help@indiaexports.co.in
               </a>
             </div>
           </motion.div>
