@@ -23,7 +23,6 @@ const App = () => {
       <Roadmap />
       <FAQs />
       <Testimonials />
-      {/* <ContactUs /> */}
       <Footer />
     </div>
   );
