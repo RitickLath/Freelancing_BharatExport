@@ -36,7 +36,7 @@ const Sticky = () => {
             {/* Chat Header */}
             <div className="rounded-t-xl flex items-center bg-[#005C4B] text-white px-4 py-2">
               <img
-                src="https://via.placeholder.com/40"
+                src="Images/wp.png"
                 alt="Avatar"
                 className="w-10 h-10 rounded-full mr-3"
               />
@@ -66,7 +66,7 @@ const Sticky = () => {
               <button
                 className="bg-[#128C7E] text-white py-1 px-4 rounded-lg hover:bg-green-700 transition"
                 onClick={() => {
-                  window.open("https://wa.me/916209847887", "_blank");
+                  window.open("https://wa.me/919903893445", "_blank");
                 }}
               >
                 Start chat
