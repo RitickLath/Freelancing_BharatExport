@@ -10,6 +10,14 @@ const Navbar = () => {
     setIsMobileMenuOpen((prevState) => !prevState);
   };
 
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMobileMenuOpen(false); // Close mobile menu if open
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -28,7 +36,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`pt-2 fixed w-full top-0 z-50 transition-all duration-300 ${
+      className={`py-1 fixed w-full top-0 z-50 transition-all duration-300 ${
         isScrolled ? "bg-[#1F282A] shadow-lg" : "bg-[#1F282A] bg-opacity-50"
       }`}
     >
@@ -46,33 +54,36 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
-          <a
-            href="#category"
+          <button
+            onClick={() => handleScrollToSection("category")}
             className="hover:text-white transition text-gray-300"
           >
             Category
-          </a>
-          <a
-            href="#contact"
+          </button>
+          <button
+            onClick={() => handleScrollToSection("contact")}
             className="hover:text-white transition text-gray-300"
           >
             Contact Us
-          </a>
-          <a href="#faqs" className="hover:text-white transition text-gray-300">
+          </button>
+          <button
+            onClick={() => handleScrollToSection("faqs")}
+            className="hover:text-white transition text-gray-300"
+          >
             FAQs
-          </a>
-          <a
-            href="#testimonials"
+          </button>
+          <button
+            onClick={() => handleScrollToSection("testimonials")}
             className="hover:text-white transition text-gray-300"
           >
             Testimonials
-          </a>
-          <a
-            href="#services"
+          </button>
+          <button
+            onClick={() => handleScrollToSection("services")}
             className="hover:text-white transition text-gray-300"
           >
             Services
-          </a>
+          </button>
         </div>
 
         {/* Mobile Hamburger Menu */}
@@ -89,41 +100,36 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#111212] text-gray-300 space-y-4 py-6 px-10">
-          <a
-            href="#category"
+          <button
+            onClick={() => handleScrollToSection("category")}
             className="block hover:text-white transition"
-            onClick={toggleMobileMenu}
           >
             Category
-          </a>
-          <a
-            href="#contact"
+          </button>
+          <button
+            onClick={() => handleScrollToSection("contact")}
             className="block hover:text-white transition"
-            onClick={toggleMobileMenu}
           >
             Contact Us
-          </a>
-          <a
-            href="#faqs"
+          </button>
+          <button
+            onClick={() => handleScrollToSection("faqs")}
             className="block hover:text-white transition"
-            onClick={toggleMobileMenu}
           >
             FAQs
-          </a>
-          <a
-            href="#testimonials"
+          </button>
+          <button
+            onClick={() => handleScrollToSection("testimonials")}
             className="block hover:text-white transition"
-            onClick={toggleMobileMenu}
           >
             Testimonials
-          </a>
-          <a
-            href="#services"
+          </button>
+          <button
+            onClick={() => handleScrollToSection("services")}
             className="block hover:text-white transition"
-            onClick={toggleMobileMenu}
           >
             Services
-          </a>
+          </button>
         </div>
       )}
     </div>

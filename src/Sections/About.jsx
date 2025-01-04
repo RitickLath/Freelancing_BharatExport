@@ -33,7 +33,7 @@ const journeyPoints = [
 
 const About = () => {
   const sectionRef = useRef(null); // Reference for the section
-  const isInView = useInView(sectionRef, { threshold: 0.2 }); // Check if the section is in view
+  const isInView = useInView(sectionRef, { once: true, amount: 0.3 }); // Check if the section is in view
 
   return (
     <div ref={sectionRef} className="bg-[#1F282A] -mt-2 py-20 w-full">
@@ -51,7 +51,7 @@ const About = () => {
           }}
         >
           <img
-            src="/Images/ExportingLow.jpg" // Replace with your image path
+            src="/Images/ExportingLow.jpg"
             alt="Global Trade"
             className="w-full rounded-lg shadow-lg object-cover"
           />
@@ -63,7 +63,7 @@ const About = () => {
         {/* Right Section - Text */}
         <motion.div
           className="lg:w-1/2 text-white mt-12 md:mt-0"
-          initial={{ x: 300, opacity: 0 }} // Start off-screen with opacity 0
+          initial={{ x: 300, opacity: 0 }} 
           animate={isInView ? { x: 0, opacity: 1 } : {}} // Animate when in view
           transition={{
             type: "spring", // Smoother transition with spring
@@ -85,7 +85,7 @@ const About = () => {
             transition={{
               delay: 0.5,
               duration: 1,
-              ease: "easeInOut", // Smooth easing function
+              ease: "easeInOut",
             }}
           >
             {journeyPoints.map((point, index) => (
@@ -103,7 +103,7 @@ const About = () => {
           </motion.div>
 
           <motion.button
-            className="mt-3 rounded-sm text-lg px-6 py-2 bg-[#A86F18] text-lg"
+            className="mt-3 rounded-sm px-6 py-2 bg-[#A86F18] text-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
             transition={{
