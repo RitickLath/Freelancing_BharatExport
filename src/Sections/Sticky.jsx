@@ -66,7 +66,7 @@ const Sticky = () => {
               <button
                 className="bg-[#128C7E] text-white py-1 px-4 rounded-lg hover:bg-green-700 transition"
                 onClick={() => {
-                  window.open("https://wa.me/919903893445", "_blank");
+                  window.open("https://wa.me/919903431445", "_blank");
                 }}
               >
                 Start chat
