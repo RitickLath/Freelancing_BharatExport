@@ -10,7 +10,7 @@ const Footer = () => {
           <p className="text-center text-gray-400">
             © 2024 India Exports. All Rights Reserved.
           </p>
-          <div className="flex space-x-6 text-[#A86F18]">
+          {/* <div className="flex space-x-6 text-[#A86F18]">
             <a
               href="https://www.notion.so/Bharat-Exports-162e57a2fb558095bd65e05947a94fa4?pvs=21"
               target="_blank"
@@ -35,7 +35,7 @@ const Footer = () => {
             >
               <FaTwitter className="text-2xl hover:text-white transition duration-300" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
