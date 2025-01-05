@@ -86,27 +86,36 @@ const FAQs = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="flex items-center text-lg text-[#F3EFDF]">
+              <div className="flex items-center text-normal text-[#F3EFDF]">
                 <MdPhone className="text-[#A86F18] text-2xl mr-4" />
                 <a href="tel:+919903431445" className="hover:underline">
                   +91 9903431445
                 </a>
               </div>
 
-              <div className="flex items-center text-lg text-[#F3EFDF]">
+              <div className="flex items-center text-normal text-[#F3EFDF]">
                 <MdPhone className="text-[#A86F18] text-2xl mr-4" />
                 <a href="tel:+919903893445" className="hover:underline">
                   +91 9903893445
                 </a>
               </div>
 
-              <div className="flex items-center text-lg text-[#F3EFDF]">
+              <div className="flex items-center text-normal text-[#F3EFDF]">
                 <MdEmail className="text-[#A86F18] text-2xl mr-4" />
                 <a
                   href="mailto:help@indiaexports.co.in"
                   className="hover:underline"
                 >
                   help@indiaexports.co.in
+                </a>
+              </div>
+              <div className="flex items-center text-normal text-[#F3EFDF]">
+                <MdEmail className="text-[#A86F18] text-2xl mr-4" />
+                <a
+                  href="mailto:enquire@indiaexports.co.in"
+                  className="hover:underline"
+                >
+                  enquire@indiaexports.co.in
                 </a>
               </div>
             </motion.div>
@@ -172,27 +181,36 @@ const FAQs = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="flex items-center text-lg text-[#F3EFDF]">
+            <div className="flex items-center text-normal text-[#F3EFDF]">
               <MdPhone className="text-[#A86F18] text-2xl mr-4" />
               <a href="tel:+919903431445" className="hover:underline">
                 +91 9903431445
               </a>
             </div>
 
-            <div className="flex items-center text-lg text-[#F3EFDF]">
+            <div className="flex items-center text-normal text-[#F3EFDF]">
               <MdPhone className="text-[#A86F18] text-2xl mr-4" />
               <a href="tel:+919903893445" className="hover:underline">
                 +91 9903893445
               </a>
             </div>
 
-            <div className="flex items-center text-lg text-[#F3EFDF]">
+            <div className="flex items-center text-normal text-[#F3EFDF]">
               <MdEmail className="text-[#A86F18] text-2xl mr-4" />
               <a
                 href="mailto:help@indiaexports.co.in"
                 className="hover:underline"
               >
                 help@indiaexports.co.in
+              </a>
+            </div>
+            <div className="flex items-center text-normal text-[#F3EFDF]">
+              <MdEmail className="text-[#A86F18] text-2xl mr-4" />
+              <a
+                href="mailto:enquire@indiaexports.co.in"
+                className="hover:underline"
+              >
+                enquire@indiaexports.co.in
               </a>
             </div>
           </motion.div>
@@ -203,3 +221,6 @@ const FAQs = () => {
 };
 
 export default FAQs;
+
+// For Trade/Commerce Enquiries: help@indiaexports.co.in
+// For Grevians: enquire@indiaexports.co.in
