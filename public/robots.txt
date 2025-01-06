@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://indiaexports.co.in/sitemap.xml
