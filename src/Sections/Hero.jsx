@@ -93,9 +93,10 @@ const Hero = () => {
           variants={textVariants}
           className="max-w-[90%] md:max-w-[600px] text-[#faf8e8] mb-6 text-sm md:text-lg"
         >
-          Your gateway to premium quality products from India. We specialize in
-          delivering excellence across global markets. Partner with us for
-          unmatched reliability and value.
+          Your gateway to premium quality{" "}
+          <strong className="text-[white]">Makhana</strong> from India. We
+          specialize in delivering excellence across global markets. Partner
+          with us for unmatched reliability and value.
         </motion.h2>
       </motion.div>
     </div>
