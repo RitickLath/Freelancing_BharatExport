@@ -55,9 +55,9 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative w-full min-h-[400px] md:min-h-screen overflow-hidden">
       {/* Background Image Container */}
-      <div className="absolute top-0 left-0 w-full h-screen">
+      <div className="absolute top-0 left-0 w-full h-full">
         {images.map((image, index) => (
           <motion.img
             key={index}
@@ -71,19 +71,19 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Black Film (Overlay) */}
+      {/* Black Overlay */}
       <div className="absolute inset-0 bg-black opacity-40 md:opacity-60"></div>
 
       {/* Animated Content */}
       <motion.div
-        className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 md:px-12"
+        className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 md:px-12"
         initial="hidden"
         animate="visible"
       >
         {/* "India Exports" Text Animated from Bottom */}
         <motion.h1
           variants={textVariants}
-          className="mb-2 md:mb-4 text-4xl md:text-6xl lg:text-7xl font-bold text-white"
+          className="mb-2 md:mb-4 text-3xl md:text-5xl lg:text-7xl font-bold text-white"
         >
           - India Exports -
         </motion.h1>
@@ -91,7 +91,7 @@ const Hero = () => {
         {/* Description Text Animated from Bottom */}
         <motion.h2
           variants={textVariants}
-          className="text-center max-w-[330px] lg:max-w-[600px] text-[#faf8e8] mb-6"
+          className="max-w-[90%] md:max-w-[600px] text-[#faf8e8] mb-6 text-sm md:text-lg"
         >
           Your gateway to premium quality products from India. We specialize in
           delivering excellence across global markets. Partner with us for
