@@ -16,24 +16,24 @@ const Category = () => {
       description:
         "Grains, spices, and processed foods. Organic and specialty agricultural items.",
     },
-    {
-      icon: <MdBrush className="text-[#A86F18] text-6xl" />,
-      title: "Handicrafts and Artisanal Products",
-      description:
-        "Handmade jewelry, pottery, and wooden items. Cultural and traditional art pieces.",
-    },
-    {
-      icon: <MdPrecisionManufacturing className="text-[#A86F18] text-6xl" />,
-      title: "Industrial and Engineering Goods",
-      description:
-        "Machinery, tools, and equipment. Automobile parts and industrial components.",
-    },
-    {
-      icon: <MdHome className="text-[#A86F18] text-6xl" />,
-      title: "Consumer Goods",
-      description:
-        "Household items, cosmetics, and personal care products. Toys, stationery, and lifestyle products.",
-    },
+    // {
+    //   icon: <MdBrush className="text-[#A86F18] text-6xl" />,
+    //   title: "Handicrafts and Artisanal Products",
+    //   description:
+    //     "Handmade jewelry, pottery, and wooden items. Cultural and traditional art pieces.",
+    // },
+    // {
+    //   icon: <MdPrecisionManufacturing className="text-[#A86F18] text-6xl" />,
+    //   title: "Industrial and Engineering Goods",
+    //   description:
+    //     "Machinery, tools, and equipment. Automobile parts and industrial components.",
+    // },
+    // {
+    //   icon: <MdHome className="text-[#A86F18] text-6xl" />,
+    //   title: "Consumer Goods",
+    //   description:
+    //     "Household items, cosmetics, and personal care products. Toys, stationery, and lifestyle products.",
+    // },
     {
       icon: <MdFastfood className="text-[#A86F18] text-6xl" />,
       title: "Food and Beverages",

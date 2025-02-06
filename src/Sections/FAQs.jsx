@@ -6,8 +6,7 @@ import { MdPhone, MdEmail } from "react-icons/md";
 const faqs = [
   {
     question: "What types of products do you export?",
-    answer:
-      "We export agricultural goods, handicrafts, textiles, and industrial products.",
+    answer: "We export agricultural goods, Makhana's.",
   },
   {
     question: "Which countries do you export to?",

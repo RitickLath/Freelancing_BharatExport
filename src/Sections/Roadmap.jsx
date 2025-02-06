@@ -51,24 +51,14 @@ const Roadmap = () => {
           About India Exports
         </h1>
         <p className="text-lg text-gray-600 text-center max-w-4xl mx-auto mb-4">
-          At <span className="font-semibold text-[#A86F18]">India Exports</span>
-          , we are proud to be a part of the new generation of entrepreneurs
-          from India, driven by passion, innovation, and a commitment to
-          excellence.
-        </p>
-        <p className="text-lg text-gray-600 text-center max-w-4xl mx-auto mb-4">
-          Rooted in{" "}
-          <span className="text-[#A86F18] font-semibold">
-            India’s rich heritage
-          </span>{" "}
-          and fueled by a vision for a global future, we specialize in exporting
-          premium-quality products that reflect the diverse and vibrant culture
-          of our country.
-        </p>
-        <p className="text-lg text-gray-600 text-center max-w-4xl mx-auto">
-          Our focus on quality, trust, and innovation ensures that every product
-          we export not only meets but exceeds global standards. Partner with us
-          to experience the excellence of Indian products.
+          We are a dynamic company founded by a team of young, dedicated
+          entrepreneurs and recent college graduates, driven by a shared vision
+          to boost India’s export sector. With the support and guidance of
+          experienced exporters, we bridge the gap between Indian manufacturers
+          and global markets, promoting high-quality, innovative products that
+          showcase the best of what India has to offer. Our passion, energy, and
+          unwavering dedication-backed by seasoned professionals-set us apart as
+          we work to elevate India’s presence on the global stage.
         </p>
       </motion.section>
 
@@ -96,46 +86,21 @@ const Roadmap = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              {/* Icon */}
               <div className="flex items-center justify-center w-16 h-16 bg-[#F9E8CF] rounded-full mb-4">
                 {milestone.icon}
               </div>
-              {/* Title */}
               <h3 className="text-lg font-semibold text-[#1F282A] text-center mb-2">
                 {milestone.title}
               </h3>
-              {/* Description */}
               <p className="text-gray-600 max-w-[400px] text-center">
                 {milestone.description}
               </p>
-              {/* Number */}
               <div className="text-xl hidden lg:flex font-bold text-[#A86F18] mt-6 lg:static absolute bottom-[-2rem] lg:bottom-auto">
                 {milestone.id}
               </div>
             </motion.div>
           ))}
         </div>
-      </motion.section>
-
-      {/* Call to Action */}
-      <motion.section
-        className="text-center px-4 py-10 bg-[#FFF8E3] rounded-lg"
-        initial={{ opacity: 0, y: 30 }}
-        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-        transition={{ duration: 0.8 }}
-      >
-        <h3 className="text-2xl font-bold text-[#1F282A] mb-4">
-          Partner with India Exports
-        </h3>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-6">
-          Explore premium-quality Indian products crafted to perfection. Whether
-          you’re a business or an individual, let us deliver excellence to you.
-        </p>
-        <a href="mailto:help@indiaexports.co.in">
-          <button className="px-6 py-3 bg-[#A86F18] text-white font-semibold rounded-md hover:bg-[#855011] transition">
-            Get in Touch
-          </button>
-        </a>
       </motion.section>
     </div>
   );

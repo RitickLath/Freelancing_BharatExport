@@ -1,52 +1,78 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+const Cimages = [
+  "/Images/CMakhana1.jpg",
+  "/Images/CMakhana2.jpg",
+  "/Images/CMakhana3.jpg",
+  "/Images/CMakhana4.jpg",
+];
+
+const images = [
+  "/Images/Makhana1.jpg",
+  "/Images/Makhana2.jpg",
+  "/Images/Makhana3.jpg",
+  "/Images/Makhana4.jpg",
+];
+
 const Hero = () => {
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [loadedImages, setLoadedImages] = useState(
+    new Array(images.length).fill(false)
+  );
+
+  // Change background image every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Preload High-Quality Images
+  useEffect(() => {
+    images.forEach((img, index) => {
+      const image = new Image();
+      image.src = img;
+      image.onload = () => {
+        setLoadedImages((prev) => {
+          const updated = [...prev];
+          updated[index] = true;
+          return updated;
+        });
+      };
+    });
+  }, []);
 
   // Animation Variants for Texts (Coming from the Bottom)
   const textVariants = {
-    hidden: { opacity: 0, y: 20 }, // Initially faded out and slightly below
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
-      y: 0, // Final state: fully visible and in normal position
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-      },
+      y: 0,
+      transition: { duration: 1, ease: "easeOut" },
     },
-  };
-
-  // Handle the video load event
-  const handleVideoLoad = () => {
-    setIsVideoLoaded(true);
   };
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* Background Video with Load Event */}
-      <video
-        className="absolute top-0 left-0 w-full h-screen object-cover"
-        src="/videos/LandingPage.mp4"
-        autoPlay
-        loop
-        muted
-        preload="auto"
-        onCanPlay={handleVideoLoad} // Trigger the state change when the video is ready
-      ></video>
+      {/* Background Image Container */}
+      <div className="absolute top-0 left-0 w-full h-screen">
+        {images.map((image, index) => (
+          <motion.img
+            key={index}
+            src={loadedImages[index] ? image : Cimages[index]} // Use compressed image if not loaded
+            alt={`Slide ${index + 1}`}
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: index === currentImageIndex ? 1 : 0 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+          />
+        ))}
+      </div>
 
       {/* Black Film (Overlay) */}
       <div className="absolute inset-0 bg-black opacity-40 md:opacity-60"></div>
-
-      {/* Loading Placeholder / Animation */}
-      {!isVideoLoaded && (
-        <div className="absolute h-screen inset-0 flex items-center justify-center bg-black opacity-60">
-          {/* Example Loading Spinner */}
-          <div className="spinner-border text-white" role="status">
-            <span className="sr-only">Loading...</span>
-          </div>
-        </div>
-      )}
 
       {/* Animated Content */}
       <motion.div
@@ -65,7 +91,7 @@ const Hero = () => {
         {/* Description Text Animated from Bottom */}
         <motion.h2
           variants={textVariants}
-          className="text-center max-w-[330px] lg:max-w-[600px] text-[#B9B8AD] mb-6"
+          className="text-center max-w-[330px] lg:max-w-[600px] text-[#faf8e8] mb-6"
         >
           Your gateway to premium quality products from India. We specialize in
           delivering excellence across global markets. Partner with us for
