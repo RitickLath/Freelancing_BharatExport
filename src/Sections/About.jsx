@@ -33,7 +33,7 @@ const journeyPoints = [
 
 const About = () => {
   const sectionRef = useRef(null); // Reference for the section
-  const isInView = useInView(sectionRef, { once: true, amount: 0.3 }); // Check if the section is in view
+  const isInView = useInView(sectionRef, { once: true }); // Check if the section is in view
 
   return (
     <div ref={sectionRef} className="bg-[#1F282A] -mt-2 py-20 w-full">
@@ -47,7 +47,7 @@ const About = () => {
             type: "spring", // Smoother transition with spring
             stiffness: 100,
             damping: 25,
-            duration: 1.5,
+            duration: 1,
           }}
         >
           <img
@@ -63,7 +63,7 @@ const About = () => {
         {/* Right Section - Text */}
         <motion.div
           className="lg:w-1/2 text-white mt-12 md:mt-0"
-          initial={{ x: 300, opacity: 0 }} 
+          initial={{ x: 300, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : {}} // Animate when in view
           transition={{
             type: "spring", // Smoother transition with spring

@@ -2,17 +2,17 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Cimages = [
-  "/Images/CMakhana1.jpg",
-  "/Images/CMakhana2.jpg",
-  "/Images/CMakhana3.jpg",
-  "/Images/CMakhana4.jpg",
+  "/Images/CMakhana1.webp",
+  "/Images/CMakhana2.webp",
+  "/Images/CMakhana3.webp",
+  "/Images/CMakhana4.webp",
 ];
 
 const images = [
-  "/Images/Makhana1.jpg",
-  "/Images/Makhana2.jpg",
-  "/Images/Makhana3.jpg",
-  "/Images/Makhana4.jpg",
+  "/Images/Makhana1.webp",
+  "/Images/Makhana2.webp",
+  "/Images/Makhana3.webp",
+  "/Images/Makhana4.webp",
 ];
 
 const Hero = () => {
