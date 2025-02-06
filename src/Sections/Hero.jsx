@@ -87,14 +87,20 @@ const Hero = () => {
         >
           - India Exports -
         </motion.h1>
+        <motion.h1
+          variants={textVariants}
+          className="mb-2 md:mb-4 text-lg text-[#ffa927] md:text-2xl lg:text-3xl font-bold "
+        >
+          From India to the World, One Makhana at a Time.
+        </motion.h1>
 
         {/* Description Text Animated from Bottom */}
         <motion.h2
           variants={textVariants}
           className="max-w-[90%] md:max-w-[600px] text-[#faf8e8] mb-6 text-sm md:text-lg"
         >
-          Your gateway to premium quality{" "}
-          <strong className="text-[white]">Makhana</strong> from India. We
+          Nourishing the World with Premium{" "}
+          <strong className="text-[white]">Makhana (Fox Nut)</strong> . We
           specialize in delivering excellence across global markets. Partner
           with us for unmatched reliability and value.
         </motion.h2>
