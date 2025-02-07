@@ -83,9 +83,9 @@ const Hero = () => {
         {/* "India Exports" Text Animated from Bottom */}
         <motion.h1
           variants={textVariants}
-          className="mb-2 md:mb-4 text-3xl md:text-5xl lg:text-7xl font-bold text-white"
+          className="mb-2 md:mb-4 text-3xl md:text-5xl lg:text-7xl font-bold text-white font-serif"
         >
-          - India Exports -
+          India Exports
         </motion.h1>
         <motion.h1
           variants={textVariants}
